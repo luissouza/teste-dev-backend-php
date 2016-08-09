@@ -22,7 +22,7 @@
 		
 		//Creating an sql query
 		$sql = "INSERT INTO nl_usuarios(nome, login, senha, nivel, idioma, telefone, pais, cidade, estado, email, categoria, criacao, alteracao, ativacao_status, ativacao_token) 
-							    VALUES ('$nome', '$login', '".sha1($senha)."', '2', '$idioma', '$telefone', '$pais', '$cidade', '$estado', '$email', '$categoria', '1', '1', '1', '".rand()."')";
+							    VALUES ('$nome', '$login', '".sha1($senha)."', '2', '$idioma', '$telefone', '$pais', '$cidade', '$estado', '$email', 1, '1', '1', '1', '".rand()."')";
 		
 		//Importing our db connection script
 		require_once('dbConnect.php');
